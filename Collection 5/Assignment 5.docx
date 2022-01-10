@@ -1,0 +1,7 @@
+Create a Project which Manages Details about the customers of a company. The Program should be able to do these task:
+
+1. It should be able to accept all the information about a customer (ID, Name, Phone, Email, Postal Code).
+2. It should be able to modify a particular details of a customer.
+3. List all the customer with all its details.
+
+Hint: Use Array.
