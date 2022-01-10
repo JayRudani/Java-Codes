@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class UniqueValuesinArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] array= new int[5];
+		Scanner input = new Scanner(System.in);
+		int[] unique_number= new int[5];
+		int k=0;
+		for(int i=0;i<5;i++)
+		{
+			int number;
+			do {
+				System.out.println("Enter number between 10 to 100:");
+				number=input.nextInt();
+				if(number<10 || number>100)
+				{
+					System.out.println("Please Enter number between 10 to 100:");
+				}
+			}while(number<10 || number>100);
+			
+			array[i]=number;
+			if(array.length==1)
+			{
+				System.out.println("Enter Number:"+number);
+			}
+			else {
+				int occurrence=0;
+				for(int j=0;j<i;j++)
+				{
+					if(array[j]==number)
+					{
+						occurrence++;
+					}
+				}
+				if(occurrence==0)
+				{
+					System.out.println("Entered Number is Unique:"+number);
+					unique_number[k]=number;
+					k++;
+				}
+				else
+				{
+					System.out.println("Entered Number already Exist!");
+				}
+			}
+		}
+		System.out.println("Unique Number Entered by User:");
+		for(int i=0;i<unique_number.length;i++)
+		{
+			if(unique_number[i]>0)
+			{
+				System.out.println(unique_number[i]);
+			}
+		}
+		input.close();
+	}
+
+}
