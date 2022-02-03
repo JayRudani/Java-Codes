@@ -1,4 +1,4 @@
-* Create a dictionary of words, as a String array. Initialize you array in your main
+/* Create a dictionary of words, as a String array. Initialize you array in your main
  * method (i.e. hard code). Make this array size 20 (with 20 words) – add any words
  * you wish (preferably greater than 5 characters per word – to make things
  * interesting)*/
