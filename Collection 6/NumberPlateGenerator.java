@@ -1,3 +1,6 @@
+//Write a java program to generate a random number plate which consist of 3 letter and 3 digit.
+
+
 public class NumberPlateGenerator {
 
 	public static void main(String[] args) {
